@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="images/mist.png" class="logo_pic">
+        <p>Weather App</p>
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="Enter City Name" spellcheck="false">
+        <button><img src="images/search.png" alt=""></button>
+    </div>
+
+   
+
+    <div class="card">
+        <div class="weather">
+            <img src="images/rain.png" class="weather_icon">
+            <h1 class="temp">35°C</h1>
+            <h2 class="city">Kuwait City</h2>
+            <p class="dateandtime" id="curr_date">05/03/2003</p>
+            <p class="dateandtime"><script> document.write(new Date().toLocaleDateString()); </script></p>
+        </div>
+    </div>
+
+    <div class="card2">
+        <p class="card2_head">Todays Highlights</p>
+        <div class="details">
+            <div class="card3">
+                <div class="col1_wind">
+                    <img src="images/wind.png" class="sub_logo_logo">
+                    <div>
+                        <p class="card3_sub_sub">Wind Speed</p>
+                        <p class="wind">7.94 Km/hr</p>
+                    </div>
+                </div>
+                <div class="col1_humidity">
+                    <img src="images/humidity.png" class="sub_logo_logo">
+                    <div>
+                        <p class="card3_sub_sub">Humidity</p>
+                        <p class="humidity">71%</p>
+                    </div>
+                </div>
+
+                <div class="col1_pressure">
+                    <img src="images/pressure.png" class="general_logo">
+                    <div>
+                        <p class="card3_sub_sub">pressure</p>
+                        <p class="pressure">1007 hPa</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card3_2">
+                <div class="col1_visibility">
+                    <img src="images/visibility.png" class="general_logo">
+                    <div>
+                        <p class="card3_sub_sub">visibility</p>
+                        <p class="visibility">10 Km</p>
+                    </div>
+                </div>
+                <div class="col1_temp_max">
+                    <img src="images/temp_max.png" class="sub_logo_logo">
+                    <div>
+                        <p class="card3_sub_sub">Highest Temperature</p>
+                        <p class="temp_max">30°C</p>
+                    </div>
+                </div>
+
+                <div class="col1_temp_min">
+                    <img src="images/temp_min.png" class="sub_logo_logo">
+                    <div>
+                        <p class="card3_sub_sub">Lowest Temperature</p>
+                        <p class="temp_min">18°C</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
